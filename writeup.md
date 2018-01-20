@@ -95,6 +95,7 @@ Next, I fit the pixels collected to a quadratic function with `np.polyfit`, and 
 For video, I discard a fitted line when it's too far from the fitted line from the last frame and just use the line from the last frame. I also average the line with previous frames by `0.2 * new_fit + 0.8 * previous_fit`, so every line is essentially a weighted rolling average of previous lines. These logics are in code cell 14.
 
 The output is shown below
+
 ![alt text][detected_lane_area]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
